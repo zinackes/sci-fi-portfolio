@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Big+Shoulders+Display&family=Iceberg&family=Iceland&display=swap" rel="stylesheet">
+    <title>Main page Portfolio</title>
+</head>
+
+    <!-- LEVEL 1 = Newbie etc en fonction du nombre de coins recup, faire systeme de barre de progression
+         tout en haut de l'ecran-->
+
+<body>
+    <img src="/assets/red-bg.png" alt="" class="home-bg">
+
+    <main>
+        <header>
+            <div style="display: flex; gap: 40px;">
+                <p><span>level</span> 1</p>
+                <p><span>rank</span> newbie</p>
+                <div class="coins">
+                    <button id="coin-button">+</button>
+                    <p><span>coins awarded</span> <span id="coins-text"></span></p>
+                </div>
+            </div>
+            <div>
+                <p>credits</p>
+                <p>local time: <span id="TodayDate"></span></p>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="left"></div>
+            <div class="center">
+                <img src="/assets/whale.png" alt="">
+                <div class="corner corner-left"></div>
+                <div class="corner corner-right"></div>
+                <div class="corner corner-bottom-left"></div>
+                <div class="corner corner-bottom-right"></div>
+            </div>
+            <div class="right"></div>
+        </div>
+    </main>
+</body>
+<script src="/src/js/main.js"></script>
+</html>
