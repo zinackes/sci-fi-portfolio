@@ -1,0 +1,81 @@
+body{
+    background-color: #000003;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-bg{
+    display: flex;
+    margin-left: auto;
+}
+
+.presentation{
+    position: absolute;
+    display: flex;
+    gap: 84px;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.presentation h1{
+    color: #E84A4A;
+    font-family: "Big Shoulders Display";
+    font-weight: 743;
+    font-size: 480px;
+    letter-spacing: -1.1rem;
+    text-transform: uppercase;
+}
+
+.text{
+    width: 800px;
+}
+
+.text p:first-child{
+    font-size: 26px;
+    margin-bottom: 60px;
+}
+
+.text p{
+    font-family: "Iceland";
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+    line-height: 25px;
+}
+
+button{
+    border: 1px solid #E84A4A;
+    background-color: transparent;
+    padding: 14px 52px;
+    margin-top: 50px;
+    transition: all .3s ease-in-out;
+}
+button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E84A4A;
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.075rem;
+    line-height: 26.33px;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #E84A4A;
+    transition: all .3s ease-in-out;
+    color: #000003;
+}
+
+button:hover a{
+    color: #000003;
+    transition: all .3s ease-in-out;
+}
+
