@@ -1,0 +1,121 @@
+body{
+    background-color: #000003;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display";
+    letter-spacing: 0.075rem;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.home-bg{
+    display: flex;
+    margin-left: auto;
+}
+
+main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 29px 78px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header p{
+    color: #7DFF68;
+    font-size: 26px;
+}
+
+header p span{
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.coins{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.coins button{
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    background-color: transparent;
+    padding: 0 11px;
+    height: 33px;
+    color: #E84A4A;
+}
+
+.coins button:hover{
+    cursor: pointer;
+}
+
+.coins span:nth-child(2){
+    color: #7DFF68;
+    font-size: 26px;
+    opacity: 1;
+}
+
+
+
+header div:nth-child(2){
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header div:nth-child(2) p:nth-child(1){
+    font-family: "Iceberg";
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+header div:nth-child(2) p:nth-child(2){
+    font-family: "iceland";
+    font-weight: 400;
+    color: #7A7A7A;
+    font-size: 14px;    
+}
+
+#TodayDate{
+    opacity: 0.90;
+    font-size: 14px;
+}
+
+
+.center{
+    position: relative;
+}
+
+.center img{
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.corner{
+    border: 1px solid #E84A4A;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    z-index: -1;
+}
+.corner-left{
+    top: 0;
+}
+
+.corner-right{
+    top: 0;
+    right: 0;
+}
+.corner-bottom-left{
+    bottom: 0;
+}
+.corner-bottom-right{
+    bottom: 0;
+    right: 0;
+}
