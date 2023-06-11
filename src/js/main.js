@@ -1,6 +1,7 @@
 const CoinsButton = document.getElementById("coin-button");
 const CoinsText = document.getElementById("coins-text");
 const TodayDateText = document.getElementById("TodayDate");
+const MissionConnection = document.querySelectorAll("#MissionConnection");
 
 let coins = 0;
 const currentDate = new Date();
@@ -26,3 +27,11 @@ function HoursMinutes(){
 
 setInterval(HoursMinutes, 1000);
 HoursMinutes();
+
+
+
+MissionConnection.forEach((button) =>{
+    button.addEventListener("click", () =>{
+        document.body.classList.toggle("rotate");
+    })
+})
