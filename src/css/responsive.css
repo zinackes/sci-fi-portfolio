@@ -1,0 +1,262 @@
+@media screen and (max-width: 1600px){
+    .whale{
+        max-width: 1000px;
+    }
+    header{
+        margin-bottom: 55px;
+    }
+    .center-btn-flex{
+        left: 10.75%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1450px){
+    .whale{
+        max-width: 970px;
+    }
+    header{
+        margin-bottom: 55px;
+    }
+    .content .left{
+        max-width: 170px;
+    }
+    .content .left h5{
+        font-size: 13px;
+    }
+    .content .left h2{
+        font-size: 20px;
+    }
+    .btn-right-space, .center-btn, .center-btn-active{
+        width: 170px;
+        max-width: 170px;
+    }
+    .btn-red-bg-sub{
+        max-width: 155px;
+    }
+    .btn-right-space{
+        font-size: 16px;
+        padding: 3px 57px 3px 8px;
+    }
+    .center-btn-flex{
+        left: 12.3%;
+    }
+    .right{
+        max-height: 290px;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .whale{
+        max-width: 900px;
+    }
+    header{
+        margin-bottom: 80px;
+    }
+    .content .left{
+        max-width: 150px;
+    }
+    .content .left h5{
+        font-size: 13px;
+    }
+    .content .left h2{
+        font-size: 19.5px;
+    }
+    .btn-right-space, .center-btn, .center-btn-active{
+        width: 150px;
+        max-width: 150px;
+        font-size: 15px;
+    }
+    .btn-red-bg-sub{
+        max-width: 135px;
+        font-size: 13px;
+    }
+    .btn-right-space{
+        padding: 3px 57px 3px 8px;
+    }
+    .center-btn-flex{
+        left: 13.70%;
+    }
+    .right{
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .whale{
+        max-width: 800px;
+    }
+    header{
+        margin-bottom: 80px;
+    }
+    .content .left{
+        max-width: 130px;
+    }
+    .content .left h5, h5{
+        font-size: 12px !important;
+    }
+    .content .left h2, h2{
+        font-size: 18.5px !important;
+    }
+    .right p{
+        font-size: 12px;
+    }
+    .btn-right-space, .center-btn, .center-btn-active{
+        width: 130px;
+        max-width: 130px;
+        font-size: 13px;
+    }
+    .btn-red-bg-sub{
+        max-width: 115px;
+        font-size: 11px;
+    }
+    .btn-right-space{
+        padding: 0 57px 0 8px;
+        font-size: 12px;
+    }
+    .subtract{
+        width: 40px;
+        top: -7;
+    }
+    .bluethoot{
+        width: 14px !important;
+        top: 3.5;
+    }
+    .center-btn-flex{
+        left: 13.70%;
+    }
+    .right{
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 1120px){
+    .whale{
+        max-width: 700px;
+    }
+    header{
+        margin-bottom: 80px;
+    }
+    .content .left{
+        max-width: 130px;
+    }
+    .content .left h5, h5{
+        font-size: 12px !important;
+    }
+    .content .left h2, h2{
+        font-size: 18.5px !important;
+    }
+    .right p{
+        font-size: 12px;
+    }
+    .btn-right-space, .center-btn, .center-btn-active{
+        width: 130px;
+        max-width: 130px;
+        font-size: 13px;
+    }
+    .btn-red-bg-sub{
+        max-width: 115px;
+        font-size: 11px;
+    }
+    .btn-right-space{
+        padding: 0 57px 0 8px;
+        font-size: 12px;
+    }
+    .subtract{
+        width: 40px;
+        top: -7;
+    }
+    .bluethoot{
+        width: 12px !important;
+        top: 3;
+    }
+    .center-btn-flex{
+        left: 9%;
+    }
+    .right{
+        max-height: 280px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .whale{
+        max-width: 800px;
+    }
+    main{
+        top: 47.5%;
+    }
+    .center-btn-flex{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    .content{
+        flex-direction:column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+    .left{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .left img{
+        max-width: 160px;
+        max-height: 160px;
+    }
+    .PersoInfo{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+    .content .left{
+        max-width: 130px;
+    }
+    .content .left h5, h5{
+        font-size: 14px !important;
+    }
+    .content .left h2, h2{
+        font-size: 22px !important;
+    }
+    .right p{
+        font-size: 12px;
+    }
+    .btn-right-space, .center-btn, .center-btn-active{
+        width: 183px;
+        max-width: 183px;
+        font-size: 18px;
+    }
+    .btn-red-bg-sub{
+        max-width: 115px;
+        font-size: 11px;
+    }
+    .btn-right-space{
+        padding: 3px 57px 3px 8px;
+        font-size: 18px;
+    }
+    .subtract{
+        width: 40px;
+        top: -7;
+    }
+    .bluethoot{
+        width: 13px !important;
+        top: 4.5;
+    }
+    .center-btn-flex{
+        left: 9%;
+    }
+    .right{
+        max-height: 280px;
+        display: none;
+    }
+}
+
+
+
