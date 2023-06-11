@@ -7,6 +7,11 @@ body{
     letter-spacing: 0.075rem;
     line-height: 21px;
     font-weight: 700;
+    z-index: -2;
+    position: relative;
+    perspective: 1000px;
+    perspective-origin: center center;
+    transition: transform .5s;
 }
 
 .home-bg{
@@ -14,16 +19,21 @@ body{
     margin-left: auto;
 }
 
+p{
+    margin: 0;
+}
+
 main{
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 29px 78px;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 header{
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 header p{
@@ -46,11 +56,11 @@ header p span{
 .coins button{
     border: 1px solid rgba(255, 255, 255, 0.29);
     background-color: transparent;
-    padding: 0 11px;
+    padding: 0 10px;
     height: 33px;
     color: #E84A4A;
+    font-size: 20px;
 }
-
 .coins button:hover{
     cursor: pointer;
 }
@@ -88,34 +98,246 @@ header div:nth-child(2) p:nth-child(2){
     font-size: 14px;
 }
 
+.content{
+    display: flex;
+    gap: 16px;
+}
 
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .left h5, .content .right h5{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13.5px;
+    margin: 0;
+    font-family: "iceland";
+}
+
+.content .left h2, .content .right h2{
+    color: #E84A4A;
+    font-size: 22px;
+    margin: 4px 0;
+}
+
+.btn-right-space{
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+    padding: 3px 140px 3px 8px;
+    margin: 5px 0;
+}
+
+.btn-red-bg{
+    color: #000003;
+    border: 1px solid #E84A4A;
+    background: #E84A4A;
+    position: relative;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 183px;
+    overflow: hidden;
+}
+.btn-red-bg:hover{
+    color: #E84A4A;
+    background-color: #000003;
+    border: 1px solid #E84A4A;
+}
+.btn-red-bg:hover .substract{
+    animation: rotation 2s infinite;
+    filter: invert(55%) sepia(21%) saturate(1629%) hue-rotate(313deg) brightness(82%) contrast(128%);
+    transition: all .3s ease-in-out;
+}
+
+.substract{
+    position: absolute;
+    top: -10;
+    right: -11;
+}
+
+.btn-dark-bg{
+    color: #E84A4A;
+    background: #000003;
+    position: relative;
+    border: 1px solid #E84A4A;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 183px;
+}
+
+.bluethoot{
+    position: absolute;
+    top: 4.5;
+    transition: all .3s ease-in-out;
+    right: 5;
+}
+
+.btn-dark-bg:hover{
+    cursor: pointer;
+    color: #000003;
+    background-color: rgb(232, 74, 74);
+    border: 1px solid #000003;
+    transition: all .3s ease-in-out;
+}
+
+.btn-dark-bg:hover .bluethoot{
+    filter: brightness(0) saturate(100%);
+    transition: all .3s ease-in-out;
+}
+
+
+
+.whale{
+    max-width: 1150px;
+}
 .center{
     position: relative;
 }
 
-.center img{
-    border: 1px solid rgba(255, 255, 255, 0.13);
-}
-
-.corner{
-    border: 1px solid #E84A4A;
-    height: 8px;
-    width: 8px;
+.center-btn-flex{
+    display: flex;
+    gap: 15px;
     position: absolute;
-    z-index: -1;
-}
-.corner-left{
-    top: 0;
+    bottom: -42;
+    left: 15.75%;
 }
 
-.corner-right{
-    top: 0;
-    right: 0;
+.center-btn{
+    border-left: 2px solid rgb(122, 122, 122, 0.4);
 }
-.corner-bottom-left{
-    bottom: 0;
+
+.center-btn button{
+    background-color: rgb(122, 122, 122, 0.4);
+    border: 1px solid rgb(122, 122, 122, 0.1);
 }
-.corner-bottom-right{
+
+.center-btn .btn-red-bg-sub{
+    background-color: rgb(36, 36, 37, 0.2);
+}
+
+
+.center-btn-active button, .center-btn button{
+    margin: 0;
+    color: #FFFFFF;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.right, .center-btn-active{
+    max-height: 270px;
+    border-left: 2px solid #E84A4A;
+}
+
+.right button{
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.btn-red-bg-sub{
+    background: rgb(232, 74, 74, 0.1);
+    padding: 8px;
+    width: 167px;
+}
+.right p:first-child{
+    margin: 0px 6px;
+    
+}
+.right p, .btn-red-bg-sub{
+    color: #7A7A7A;
+    font-family: "Iceland";
+    font-size: 15px;
+    line-height: 14px;
+    letter-spacing: normal;
+    max-width: 180px
+}
+
+.right div:nth-child(2) div:nth-child(3){
+    margin: 10px;
+}
+
+.right h5{
+    margin: 7px 0 !important;
+}
+
+.right h2{
+    margin-bottom: 20px !important;
+}
+
+
+.rotate{
+    transform: perspective(1000px) rotateY(-40deg) translateZ(-200px);
+    overflow: hidden;
+    transition: transform .5s;
+}
+
+.rotate .left{
+    filter: brightness(40%);
+}
+.rotate .center{
+    filter: brightness(80%);
+}
+.rotate header{
+    filter: brightness(40%);
+}
+
+
+.menu{
+    position: absolute;
     bottom: 0;
-    right: 0;
+    width: 98%;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-middle{
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+    width: 50%;
+    padding: 4px 0;
+}
+
+.menu button{
+    max-width: 49.5%;
+}
+
+.menu button:nth-child(2){
+    margin-left: auto;
+    border: 1px solid #262626;
+
+}
+
+.menu button:nth-child(1):hover{
+    background-color: #E84A4A;
+    color: #FFFFFF;
+}
+.menu button:nth-child(2):hover{
+    background-color: transparent;
+    border-color: #E84A4A;
+    color: #FFFFFF;
+}
+
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
