@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,17 +34,77 @@
         </header>
 
         <div class="content">
-            <div class="left"></div>
-            <div class="center">
-                <img src="/assets/whale.png" alt="">
-                <div class="corner corner-left"></div>
-                <div class="corner corner-right"></div>
-                <div class="corner corner-bottom-left"></div>
-                <div class="corner corner-bottom-right"></div>
+            <div class="left">
+                <img src="/assets/ProfilePicture.png" alt="">
+                <div class="GlobalInfo">
+                    <div class="PersoInfo">
+                        <div>
+                            <h5>name</h5>
+                            <h2>mathys sclafer</h2>
+                        </div>
+                        <div>
+                            <h5>occupation</h5>
+                            <h2>Student</h2>
+                        </div>
+                        <div>
+                            <h5>nationnality</h5>
+                            <h2>French</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>availabilty</h5>
+                        <div>
+                            <button class="btn-right-space btn-red-bg" id="MissionConnection">open for mission <img src="/assets/substract.png" alt="" class="substract"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>social</h5>
+                        <button class="btn-right-space btn-dark-bg" id="MissionConnection">open connection <img src="/assets/Bluethoot.png" alt="" class="bluethoot"></button>
+                    </div>
+                </div>
             </div>
-            <div class="right"></div>
+            <div class="center">
+                <img src="/assets/whale.png" alt="" class="whale">
+                <div class="center-btn-flex">
+                    <div class="center-btn-active">
+                        <button class="btn-right-space btn-red-bg">beginning <img src="/assets/substract.png" alt="" class="substract"></button>
+                        <div class="btn-red-bg-sub"><p>Explore the main page of the portfolio</p></div>
+                    </div>
+                    <div class="center-btn">
+                        <button class="btn-right-space btn-red-bg">logs <img src="/assets/substract.png" alt="" class="substract"></button>
+                        <div class="btn-red-bg-sub"><p>Browse all my finished projects</p></div>
+                    </div>
+                    <div class="center-btn">
+                        <button class="btn-right-space btn-red-bg">achievements <img src="/assets/substract.png" alt="" class="substract"></button>
+                        <div class="btn-red-bg-sub"><p>See my personnal achievements</p></div>
+                    </div>
+                    <div class="center-btn">
+                        <button class="btn-right-space btn-red-bg">creations <img src="/assets/substract.png" alt="" class="substract"></button>
+                        <div class="btn-red-bg-sub"><p>Get a closer look of a project</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="col"></div>
+                <div>
+                    <button class="btn-right-space btn-red-bg">active quest <img src="/assets/substract.png" alt="" class="substract"></button>
+                    <div class="btn-red-bg-sub"><p>the react skill-up line</p></div>
+                    <div>
+                        <h5>quest name</h5>
+                        <h2>react website</h2>
+                        <h5>goal</h5>
+                        <p>Build this website. Implement a full react website with multiple routers, 
+                            UI elements and tricky styling. Make it all work great!</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+    <div class="menu">
+        <button class="btn-middle btn-red-bg">navigation</button>
+        <button class="btn-middle btn-dark-bg">navigation</button>
+    </div>
 </body>
 <script src="/src/js/main.js"></script>
 </html>
