@@ -208,13 +208,16 @@
         max-width: 160px;
         max-height: 160px;
     }
-    .PersoInfo{
+    .PersoInfo{ 
         flex-direction: row;
         display: flex;
         flex-wrap: wrap;
         width: 300px;
         gap: 20px;
         margin-bottom: 15px;
+    }
+    .menu{
+        display: flex;
     }
     .content .left{
         max-width: 130px;

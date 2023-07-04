@@ -299,6 +299,7 @@ header div:nth-child(2) p:nth-child(2){
     padding: 8px;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .btn-middle{
@@ -324,6 +325,7 @@ header div:nth-child(2) p:nth-child(2){
 
 .menu button:nth-child(1):hover{
     background-color: #E84A4A;
+    border-color: #FFFFFF;
     color: #FFFFFF;
 }
 .menu button:nth-child(2):hover{
